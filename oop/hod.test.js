@@ -4,11 +4,11 @@ import assert from 'assert';
 
 try {
   const testHod = new HOD();
-  testHod.setStudent("Alice");
-  testHod.setHod("Dr. Smith");
+  testHod.setStudent("Sinan");
+  testHod.setHod("abcd");
   testHod.setCollege("MIT");
 
-  const expected = "College: MIT\nHOD: Dr. Smith\nStudent: Alice";
+  const expected = "College: MIT\nHOD: abcd\nStudent: Sinan";
   
   assert.strictEqual(testHod.info(), expected);
   
