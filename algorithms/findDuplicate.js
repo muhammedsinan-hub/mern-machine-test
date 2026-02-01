@@ -1,0 +1,17 @@
+function findDuplicates(nums) {
+  const duplicates = [];
+
+  for (let i = 0; i < nums.length; i++) {
+    const index = Math.abs(nums[i]) - 1;
+
+    if (nums[index] < 0) {
+      duplicates.push(index + 1);
+    } else {
+      nums[index] = -nums[index];
+    }
+  }
+
+  return duplicates;
+}
+
+console.log(findDuplicates([1,2,2,3,4,4]))
